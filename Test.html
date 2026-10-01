@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Card</title>
+    <title>Welcome to Kaar</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="Test.css">
-    <script src="Test.js"></script>
 </head>
+
 <body>
 
-    <div class="weather-card">
-        <h1>Today's weather</h1>
+    <div class="navbar">
+        <span>Fruit Shop</span>
 
-        <input type="text" id="cityInput" placeholder="Enter city">
-
-        <button onclick="checkWeather()">Search</button>
-
-        <div id="weather">
-            <div class="icon">☀️</div>
-            <h2 id="city">---</h2>
-            <h3 id="temperature">--°C</h3>
-            <p id="condition">---</p>
+        <div class="cart-container">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-badge" class="cart-badge">0</span>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="fruit-list" id="fruit-container">
+    </div>
+
+    <div class="dis-section">
+        <label for="">coupon code :</label>
+        <input type="text" id="disc-val">
+        <button id="disc-btn">Apply Discount</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Test.js"></script>
+
 </body>
 </html>
